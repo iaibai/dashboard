@@ -1,0 +1,21 @@
+language: ruby
+
+sudo: enabled
+
+branches:
+  only:
+    - master
+
+deploy:
+  - provider: elasticbeanstalk
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key:
+      secure: $AWS_SECRET_ACCESS_KEY
+    region: eu-west-1
+    app: dashboard
+    env: production
+    zip_file: /tmp/${TRAVIS_COMMIT}.zip
+    skip_cleanup: true
+    bucket_name: dashboard-versions
+    on:
+      branch: master
