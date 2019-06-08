@@ -6,7 +6,12 @@ branches:
   only:
     - master
 
-script: echo There is no script.
+before_install:
+  - gem update --system
+  - gem install bundler
+
+script:
+  - echo "skipping tests"
 
 deploy:
   - provider: elasticbeanstalk
