@@ -1,4 +1,5 @@
 require 'dashing'
+require 'tzinfo'
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'

@@ -19,7 +19,7 @@ deploy:
       secure: $AWS_SECRET_ACCESS_KEY
     region: eu-west-1
     app: dashboard
-    env: production
+    env: docker
     skip_cleanup: true
     bucket_name: dashboard-versions
     on:
