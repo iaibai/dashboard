@@ -6,3 +6,5 @@ gem 'smashing'
 gem 'twitter', '>= 5.9.0'
 gem "tzinfo-data"
 
+
+gem "dotenv", "~> 2.7"
