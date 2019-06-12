@@ -1,7 +1,5 @@
 FROM ruby:alpine
 
-MAINTAINER Simon Weis <docker@w3is.de>
-
 WORKDIR /dashboard
 
 ENV GEM_HOME /dashboard/.bundle
